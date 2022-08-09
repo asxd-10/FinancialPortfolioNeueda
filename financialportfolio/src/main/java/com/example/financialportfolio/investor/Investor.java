@@ -2,18 +2,30 @@ package com.example.financialportfolio.investor;
 
 import com.example.financialportfolio.stock.Stock;
 
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Optional;
 
+@Entity
 public class Investor {
     @Id
+    @GeneratedValue
+    private long id;
+    @OneToOne(cascade = CascadeType.ALL)
     private Stock stock;
     private double quantity, buying_price, selling_price, p_or_l;
+
+    public Investor()
+    {
+    }
 
     public Investor(Stock stock, double quantity, double buying_price, double selling_price) {
         this.stock = stock;
         this.quantity = quantity;
         this.buying_price = buying_price;
         this.selling_price = selling_price;
+    }
+
+    public Investor(Optional<Stock> byId, double quantity, double buyPrice, double sellPrice) {
     }
 
     public Stock getStock() {

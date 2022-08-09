@@ -5,8 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-
 @Repository
-public interface StockReposiory extends CrudRepository<Stock, Long>{
+public interface StockRepository extends CrudRepository<Stock, Long> {
     List<Stock> findAll();
 }

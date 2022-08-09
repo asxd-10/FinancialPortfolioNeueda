@@ -1,15 +1,52 @@
 package com.example.financialportfolio.stock;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.annotation.sql.DataSourceDefinition;
+import javax.persistence.*;
 
+@Entity
 public class Stock {
     @GeneratedValue
     @Id
-    private int id;
-    private String symbol;
+    private long id;
+    private String Symbol;
     private String name;
-    private double open, close, high, low, ltp, change, percent_change, volume, turnover, week_high_52;
+    private double open, close, high, low, ltp, change, percent_change, volume, turnover, week_high_52,
+            week_low_52, annual_pct_change, monthly_pct_change;
+
+    public Stock() {
+    }
+
+    public double getWeek_low_52() {
+        return week_low_52;
+    }
+
+    public void setWeek_low_52(double week_low_52) {
+        this.week_low_52 = week_low_52;
+    }
+
+    public double getAnnual_pct_change() {
+        return annual_pct_change;
+    }
+
+    public void setAnnual_pct_change(double annual_pct_change) {
+        this.annual_pct_change = annual_pct_change;
+    }
+
+    public double getMonthly_pct_change() {
+        return monthly_pct_change;
+    }
+
+    public void setMonthly_pct_change(double monthly_pct_change) {
+        this.monthly_pct_change = monthly_pct_change;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -20,11 +57,11 @@ public class Stock {
     }
 
     public String getSymbol() {
-        return symbol;
+        return Symbol;
     }
 
     public void setSymbol(String symbol) {
-        this.symbol = symbol;
+        this.Symbol = symbol;
     }
 
     public double getOpen() {
