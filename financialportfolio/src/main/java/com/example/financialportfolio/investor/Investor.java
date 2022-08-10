@@ -1,22 +1,28 @@
 package com.example.financialportfolio.investor;
 
 import com.example.financialportfolio.stock.Stock;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Entity
 public class Investor {
     @Id
-    @GeneratedValue
+    @GeneratedValue(
+            strategy =  GenerationType.IDENTITY
+    )
     private long id;
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL )
+//    @JoinColumn(name = "stock_id")
+    @NotFound(action = NotFoundAction.IGNORE)
     private Stock stock;
     private double quantity, buying_price, selling_price, p_or_l;
 
-    public Investor()
-    {
-    }
+    public Investor(){}
 
     public Investor(Stock stock, double quantity, double buying_price, double selling_price) {
         this.stock = stock;
@@ -25,7 +31,12 @@ public class Investor {
         this.selling_price = selling_price;
     }
 
-    public Investor(Optional<Stock> byId, double quantity, double buyPrice, double sellPrice) {
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public Stock getStock() {

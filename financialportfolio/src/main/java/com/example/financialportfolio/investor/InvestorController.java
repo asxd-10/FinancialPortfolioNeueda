@@ -21,11 +21,23 @@ public class InvestorController {
         return investorRep.findAll();
     }
 
+    @GetMapping("stock-check/{id}")
+    public Stock getStock(@PathVariable long id) {
+        return stockRep.findById(id).orElse(null);
+    }
 
     @PostMapping("BuyOrder")
-    public void addEmployee(@RequestBody long stock_id, @RequestBody double quantity,
-                            @RequestBody double buyPrice, @RequestBody double sellPrice) {
-        investorRep.save(new Investor(stockRep.findById(stock_id), quantity, buyPrice, sellPrice));
+    public void addFixedInvestor() {
+        Investor i1 = new Investor(new Stock("AXINK", 240,290,220),400, 237, 255);
+        investorRep.save(i1);
+
+    }
+
+    @PostMapping("buyOrder")
+    public void addInvestor(@RequestBody long stock_id, @RequestBody double quantity,
+                            @RequestBody double buying_price, @RequestBody double selling_price) {
+        Investor i1 = new Investor(stockRep.findById(stock_id).orElse(null), quantity, buying_price, selling_price);
+        investorRep.save(i1);
     }
 //
 //    @DeleteMapping("person")
@@ -38,8 +50,8 @@ public class InvestorController {
 //        return personRepository.findById(id);
 //    }
 //
-//    @DeleteMapping("AllPersons")
-//    public void deleteEmployees() {
-//        personRepository.deleteAll();
-//    }
+    @DeleteMapping("AllInvestors")
+    public void deleteAllInvestors() {
+        investorRep.deleteAll();
+    }
 }

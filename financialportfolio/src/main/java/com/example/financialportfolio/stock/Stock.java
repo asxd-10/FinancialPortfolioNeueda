@@ -5,16 +5,25 @@ import javax.persistence.*;
 
 @Entity
 public class Stock {
-    @GeneratedValue
     @Id
+    @GeneratedValue(
+            strategy =  GenerationType.IDENTITY
+    )
+
     private long id;
     private String Symbol;
-    private String name;
-    private double open, close, high, low, ltp, change, percent_change, volume, turnover, week_high_52,
+    private double openv, high, low, ltp, changes, percent_change, volume, turnover, week_high_52,
             week_low_52, annual_pct_change, monthly_pct_change;
 
-    public Stock() {
+    public Stock(String symbol, double openv, double high, double low) {
+        this.Symbol=symbol;
+        this.openv=openv;
+        this.high=high;
+        this.low=low;
+
     }
+
+    public Stock(){}
 
     public double getWeek_low_52() {
         return week_low_52;
@@ -48,14 +57,6 @@ public class Stock {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSymbol() {
         return Symbol;
     }
@@ -65,20 +66,20 @@ public class Stock {
     }
 
     public double getOpen() {
-        return open;
+        return openv;
     }
 
-    public void setOpen(double open) {
-        this.open = open;
+    public void setOpen(double openv) {
+        this.openv = openv;
     }
 
-    public double getClose() {
-        return close;
-    }
-
-    public void setClose(double close) {
-        this.close = close;
-    }
+//    public double getClose() {
+//        return close;
+//    }
+//
+//    public void setClose(double close) {
+//        this.close = close;
+//    }
 
     public double getHigh() {
         return high;
@@ -105,11 +106,11 @@ public class Stock {
     }
 
     public double getChange() {
-        return change;
+        return changes;
     }
 
-    public void setChange(double change) {
-        this.change = change;
+    public void setChange(double changes) {
+        this.changes = changes;
     }
 
     public double getPercent_change() {

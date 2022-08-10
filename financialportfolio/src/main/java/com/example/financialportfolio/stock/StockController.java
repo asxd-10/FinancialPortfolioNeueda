@@ -9,7 +9,7 @@ import java.util.Optional;
 @RestController
 public class StockController {
     @Autowired
-    private StockRepository stockRep;
+    public StockRepository stockRep;
 
     @GetMapping("stocks")
     public List<Stock> getStocks() {
