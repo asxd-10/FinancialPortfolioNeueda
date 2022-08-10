@@ -39,3 +39,9 @@ For the project, I would like to express my gratitude towards :-
 * [Neueda](https://neueda.com/) for providing us the training
 * [Maaike van Putten](https://www.linkedin.com/in/maaikevanputten/), our Java and SpringBoot trainer for the valuable teachings and necessary guidance + helpful debugging for this project
 The code can be freely used by any individual or organization for their needs. MIT LICENSED.
+
+Authors - 
+* Ashay Katre
+* Pooja Srinivasan
+* Sandeep Allam
+* Shruthi Muralidaran
