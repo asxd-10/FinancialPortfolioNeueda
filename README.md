@@ -20,8 +20,6 @@ This is a project for the Neueda Training program -  sprint 3 deliverable.
 The overall objective of the project is to get acquainted with Java, SpringBoot functionalities and annotations, basic system design, docker and CI/CD pipelines. 
 The immediate aim is to design a simple Portfolio Manager for handling basic requests that can be scaled later. And leveraging SQL servers for persistent storage in springboot apps effectively.
 
-### Sample Output
-![Investors Get Request json o/p](https://github.com/asxd-10/FinancialPortfolioNeueda/blob/main/investors-op.jpg?raw=true)
 
 ### Assumptions
 As this is a basic project, there are several assumptions taken for maintaining simplicity :-
@@ -36,6 +34,9 @@ As this is a basic project, there are several assumptions taken for maintaining 
 ### File Descriptions/ Approach
 The structure of the project is like any other SpringBoot application with Two Entities - Investor(really means the transaction record) and the Stock entity. 
 The investor entity has a nested stock entity, as each record will contain the stock traded on the market. Requests have been made accordingly.
+
+### Sample Output
+![Investors Get Request json o/p](https://github.com/asxd-10/FinancialPortfolioNeueda/blob/main/investors-op.jpg?raw=true)
 
 ### Acknowledgement, Author and Licensing
 For the project, I would like to express my gratitude towards :- 
