@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+
+  mysql :
+    image: mysql:5.7-debian
+    volumes : 
+	- /home/grads/financialportfolio/schema:/docker-entrypoint-initdb.d
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: c0nygre
+	MYSQL_DATABASE : InvestorsDB	
+
+  javaapp:
+    image: financialportfolio:0.0.1
+    environment :
+	DB_HOST: mysql
+    restart: always
+    ports:
+      - 8081:8080
+    networks:
+	- mysqlnet

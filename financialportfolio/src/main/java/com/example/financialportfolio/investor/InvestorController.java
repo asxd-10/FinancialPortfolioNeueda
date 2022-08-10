@@ -30,7 +30,6 @@ public class InvestorController {
     public void addFixedInvestor() {
         Investor i1 = new Investor(new Stock("AXINK", 240,290,220),400, 237, 255);
         investorRep.save(i1);
-
     }
 
     @PostMapping("buyOrder")
@@ -39,17 +38,19 @@ public class InvestorController {
         Investor i1 = new Investor(stockRep.findById(stock_id).orElse(null), quantity, buying_price, selling_price);
         investorRep.save(i1);
     }
+
+    @PostMapping("simplePost")
+    public void addInvestorExplicit(@RequestParam String symbol, @RequestParam double openv, @RequestParam double high, @RequestParam double low, @RequestParam double quantity,
+                                     @RequestParam double buying_price, @RequestParam double selling_price) {
+        Investor i1 = new Investor(new Stock(symbol, openv, high, low), quantity, buying_price, selling_price);
+        investorRep.save(i1);
+    }
 //
-//    @DeleteMapping("person")
-//    public void deleteEmployee(@RequestBody long id) {
-//        personRepository.deleteById(id);
-//    }
-//
-//    @GetMapping("personByID/{id}")
-//    public Optional<Person> getEmployeeByID(@PathVariable long id) {
-//        return personRepository.findById(id);
-//    }
-//
+    @DeleteMapping("deleteRecord")
+    public void deleteInvestor(@RequestParam long id) {
+        investorRep.deleteById(id);
+    }
+
     @DeleteMapping("AllInvestors")
     public void deleteAllInvestors() {
         investorRep.deleteAll();
