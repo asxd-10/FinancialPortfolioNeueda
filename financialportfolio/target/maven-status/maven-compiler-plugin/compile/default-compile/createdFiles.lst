@@ -1,0 +1,7 @@
+com\example\financialportfolio\investor\Investor.class
+com\example\financialportfolio\investor\InvestorController.class
+com\example\financialportfolio\investor\InvestorRepository.class
+com\example\financialportfolio\stock\StockController.class
+com\example\financialportfolio\stock\Stock.class
+com\example\financialportfolio\stock\StockRepository.class
+com\example\financialportfolio\FinancialportfolioApplication.class

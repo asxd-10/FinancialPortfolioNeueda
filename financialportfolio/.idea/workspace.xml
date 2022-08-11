@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="31091322-a903-4c2f-9a22-cf689f3397fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="investorsdb@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="investorsdb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2D6t1E5YN8layqfrzT9Sivgw42K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="FinancialportfolioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="financialportfolio" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.financialportfolio.FinancialportfolioApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31091322-a903-4c2f-9a22-cf689f3397fc" name="Default Changelist" comment="" />
+      <created>1660031144195</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660031144195</updated>
+      <workItem from="1660031149916" duration="1167000" />
+      <workItem from="1660035894843" duration="16609000" />
+      <workItem from="1660062109479" duration="5776000" />
+      <workItem from="1660096217510" duration="24079000" />
+      <workItem from="1660134006328" duration="5466000" />
+      <workItem from="1660187274174" duration="10090000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Assign_Data_Sources" timestamp="1660048315077">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1660048315077" />
+    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1660047383375">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1660047383375" />
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1660108454979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1660108454979" />
+    <state x="460" y="222" width="447" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1660052261053">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="460" y="222" width="447" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1660052261053" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1660048041906">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1660048041906" />
+    <state width="1322" height="121" key="GridCell.Tab.0.bottom" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="1322" height="121" key="GridCell.Tab.0.center" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="1322" height="121" key="GridCell.Tab.0.left" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="1322" height="121" key="GridCell.Tab.0.right" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="1322" height="121" key="GridCell.Tab.1.bottom" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="1322" height="121" key="GridCell.Tab.1.center" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="1322" height="121" key="GridCell.Tab.1.left" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="1322" height="121" key="GridCell.Tab.1.right" timestamp="1660201212701">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="121" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1660201212701" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1660047314580">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1660047314580" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1660187402974">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1660187402974" />
+    <state x="0" y="0" width="736" height="728" key="find.popup" timestamp="1660032858796">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" width="736" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1660032858796" />
+    <state x="339" y="157" width="672" height="677" key="run.anything.popup" timestamp="1660193695733">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1660193695733" />
+  </component>
+</project>
