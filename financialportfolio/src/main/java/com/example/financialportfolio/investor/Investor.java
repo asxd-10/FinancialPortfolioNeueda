@@ -31,6 +31,11 @@ public class Investor {
         this.selling_price = selling_price;
     }
 
+    public void computeProfitOrLoss()
+    {
+        this.p_or_l =  (this.selling_price-this.buying_price)*quantity;
+    }
+
     public long getId() {
         return id;
     }

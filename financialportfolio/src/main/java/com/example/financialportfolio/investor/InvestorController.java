@@ -16,26 +16,28 @@ public class InvestorController {
     @Autowired
     private StockRepository stockRep;
 
-    @GetMapping("investors")
-    public List<Investor> getInvestors() {
-        return investorRep.findAll();
-    }
-
     @GetMapping("stock-check/{id}")
     public Stock getStock(@PathVariable long id) {
         return stockRep.findById(id).orElse(null);
     }
 
+    @GetMapping("investors")
+    public List<Investor> getInvestors() {
+        return investorRep.findAll();
+    }
+
     @PostMapping("BuyOrder")
     public void addFixedInvestor() {
         Investor i1 = new Investor(new Stock("AXINK", 240,290,220),400, 237, 255);
+        i1.computeProfitOrLoss();
         investorRep.save(i1);
     }
 
     @PostMapping("buyOrder")
-    public void addInvestor(@RequestBody long stock_id, @RequestBody double quantity,
-                            @RequestBody double buying_price, @RequestBody double selling_price) {
+    public void addInvestor(@RequestParam long stock_id, @RequestParam double quantity,
+                            @RequestParam double buying_price, @RequestParam double selling_price) {
         Investor i1 = new Investor(stockRep.findById(stock_id).orElse(null), quantity, buying_price, selling_price);
+        i1.computeProfitOrLoss();
         investorRep.save(i1);
     }
 
@@ -43,6 +45,7 @@ public class InvestorController {
     public void addInvestorExplicit(@RequestParam String symbol, @RequestParam double openv, @RequestParam double high, @RequestParam double low, @RequestParam double quantity,
                                      @RequestParam double buying_price, @RequestParam double selling_price) {
         Investor i1 = new Investor(new Stock(symbol, openv, high, low), quantity, buying_price, selling_price);
+        i1.computeProfitOrLoss();
         investorRep.save(i1);
     }
 //
